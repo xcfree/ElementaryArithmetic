@@ -1,0 +1,8 @@
+C:\Users\xcfree\Documents\Visual Studio 2008\Projects\ElementaryArithmetic\ElementaryArithmetic\bin\Debug\四则运算习题生成器.exe
+C:\Users\xcfree\Documents\Visual Studio 2008\Projects\ElementaryArithmetic\ElementaryArithmetic\bin\Debug\四则运算习题生成器.pdb
+C:\Users\xcfree\Documents\Visual Studio 2008\Projects\ElementaryArithmetic\ElementaryArithmetic\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\xcfree\Documents\Visual Studio 2008\Projects\ElementaryArithmetic\ElementaryArithmetic\obj\Debug\ElementaryArithmetic.Properties.Resources.resources
+C:\Users\xcfree\Documents\Visual Studio 2008\Projects\ElementaryArithmetic\ElementaryArithmetic\obj\Debug\ElementaryArithmetic.csproj.GenerateResource.Cache
+C:\Users\xcfree\Documents\Visual Studio 2008\Projects\ElementaryArithmetic\ElementaryArithmetic\obj\Debug\四则运算习题生成器.exe
+C:\Users\xcfree\Documents\Visual Studio 2008\Projects\ElementaryArithmetic\ElementaryArithmetic\obj\Debug\四则运算习题生成器.pdb
+C:\Users\xcfree\Documents\Visual Studio 2008\Projects\ElementaryArithmetic\ElementaryArithmetic\obj\Debug\ElementaryArithmetic.MainForm.resources
