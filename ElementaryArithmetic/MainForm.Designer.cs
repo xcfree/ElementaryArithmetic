@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.labelAdd = new System.Windows.Forms.Label();
             this.labelMinus = new System.Windows.Forms.Label();
             this.labelMultiply = new System.Windows.Forms.Label();
@@ -44,9 +45,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.numericUpDownFillInBlankPercentage = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownMaxFactor = new System.Windows.Forms.NumericUpDown();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.buttonGenExercise = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAddPercentage)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -61,7 +59,7 @@
             // labelAdd
             // 
             this.labelAdd.AutoSize = true;
-            this.labelAdd.Location = new System.Drawing.Point(15, 29);
+            this.labelAdd.Location = new System.Drawing.Point(15, 27);
             this.labelAdd.Name = "labelAdd";
             this.labelAdd.Size = new System.Drawing.Size(17, 12);
             this.labelAdd.TabIndex = 2;
@@ -70,7 +68,7 @@
             // labelMinus
             // 
             this.labelMinus.AutoSize = true;
-            this.labelMinus.Location = new System.Drawing.Point(15, 54);
+            this.labelMinus.Location = new System.Drawing.Point(15, 55);
             this.labelMinus.Name = "labelMinus";
             this.labelMinus.Size = new System.Drawing.Size(17, 12);
             this.labelMinus.TabIndex = 3;
@@ -88,7 +86,7 @@
             // labelDivide
             // 
             this.labelDivide.AutoSize = true;
-            this.labelDivide.Location = new System.Drawing.Point(15, 107);
+            this.labelDivide.Location = new System.Drawing.Point(15, 111);
             this.labelDivide.Name = "labelDivide";
             this.labelDivide.Size = new System.Drawing.Size(17, 12);
             this.labelDivide.TabIndex = 5;
@@ -101,7 +99,7 @@
             0,
             0,
             0});
-            this.numericUpDownAddPercentage.Location = new System.Drawing.Point(50, 27);
+            this.numericUpDownAddPercentage.Location = new System.Drawing.Point(50, 23);
             this.numericUpDownAddPercentage.Maximum = new decimal(new int[] {
             25,
             0,
@@ -128,9 +126,9 @@
             this.groupBox1.Controls.Add(this.labelMultiply);
             this.groupBox1.Controls.Add(this.numericUpDownAddPercentage);
             this.groupBox1.Controls.Add(this.labelDivide);
-            this.groupBox1.Location = new System.Drawing.Point(264, 22);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(143, 170);
+            this.groupBox1.Size = new System.Drawing.Size(124, 170);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "题型分布（%）";
@@ -175,7 +173,7 @@
             0,
             0,
             0});
-            this.numericUpDownMultiplyPercentage.Location = new System.Drawing.Point(50, 81);
+            this.numericUpDownMultiplyPercentage.Location = new System.Drawing.Point(50, 79);
             this.numericUpDownMultiplyPercentage.Maximum = new decimal(new int[] {
             25,
             0,
@@ -198,7 +196,7 @@
             0,
             0,
             0});
-            this.numericUpDownMinusPercentage.Location = new System.Drawing.Point(50, 54);
+            this.numericUpDownMinusPercentage.Location = new System.Drawing.Point(50, 51);
             this.numericUpDownMinusPercentage.Maximum = new decimal(new int[] {
             25,
             0,
@@ -217,7 +215,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(29, 22);
+            this.label6.Location = new System.Drawing.Point(161, 25);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 12);
             this.label6.TabIndex = 11;
@@ -230,7 +228,7 @@
             0,
             0,
             0});
-            this.numericUpDownExVolume.Location = new System.Drawing.Point(115, 22);
+            this.numericUpDownExVolume.Location = new System.Drawing.Point(247, 21);
             this.numericUpDownExVolume.Maximum = new decimal(new int[] {
             200,
             0,
@@ -242,10 +240,10 @@
             0,
             0});
             this.numericUpDownExVolume.Name = "numericUpDownExVolume";
-            this.numericUpDownExVolume.Size = new System.Drawing.Size(63, 21);
+            this.numericUpDownExVolume.Size = new System.Drawing.Size(53, 21);
             this.numericUpDownExVolume.TabIndex = 12;
             this.numericUpDownExVolume.Value = new decimal(new int[] {
-            100,
+            40,
             0,
             0,
             0});
@@ -253,7 +251,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(29, 51);
+            this.label7.Location = new System.Drawing.Point(161, 53);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 12);
             this.label7.TabIndex = 13;
@@ -262,11 +260,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(29, 81);
+            this.label8.Location = new System.Drawing.Point(161, 81);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 12);
+            this.label8.Size = new System.Drawing.Size(77, 12);
             this.label8.TabIndex = 14;
-            this.label8.Text = "难度";
+            this.label8.Text = "难度（以内）";
             // 
             // numericUpDownFillInBlankPercentage
             // 
@@ -275,9 +273,9 @@
             0,
             0,
             0});
-            this.numericUpDownFillInBlankPercentage.Location = new System.Drawing.Point(115, 47);
+            this.numericUpDownFillInBlankPercentage.Location = new System.Drawing.Point(247, 49);
             this.numericUpDownFillInBlankPercentage.Name = "numericUpDownFillInBlankPercentage";
-            this.numericUpDownFillInBlankPercentage.Size = new System.Drawing.Size(63, 21);
+            this.numericUpDownFillInBlankPercentage.Size = new System.Drawing.Size(53, 21);
             this.numericUpDownFillInBlankPercentage.TabIndex = 15;
             this.numericUpDownFillInBlankPercentage.Value = new decimal(new int[] {
             30,
@@ -292,9 +290,9 @@
             0,
             0,
             0});
-            this.numericUpDownMaxFactor.Location = new System.Drawing.Point(115, 76);
+            this.numericUpDownMaxFactor.Location = new System.Drawing.Point(247, 77);
             this.numericUpDownMaxFactor.Maximum = new decimal(new int[] {
-            10000,
+            1000,
             0,
             0,
             0});
@@ -304,7 +302,7 @@
             0,
             0});
             this.numericUpDownMaxFactor.Name = "numericUpDownMaxFactor";
-            this.numericUpDownMaxFactor.Size = new System.Drawing.Size(44, 21);
+            this.numericUpDownMaxFactor.Size = new System.Drawing.Size(53, 21);
             this.numericUpDownMaxFactor.TabIndex = 16;
             this.numericUpDownMaxFactor.Value = new decimal(new int[] {
             100,
@@ -312,38 +310,9 @@
             0,
             0});
             // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(17, 134);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(228, 16);
-            this.checkBox2.TabIndex = 19;
-            this.checkBox2.Text = "乘法中一个因数必须是一位数或整十数";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(17, 156);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(216, 16);
-            this.checkBox3.TabIndex = 20;
-            this.checkBox3.Text = "除法中除数可以是一位数或者整十数";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(167, 81);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 12);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "以内";
-            // 
             // buttonGenExercise
             // 
-            this.buttonGenExercise.Location = new System.Drawing.Point(162, 242);
+            this.buttonGenExercise.Location = new System.Drawing.Point(225, 146);
             this.buttonGenExercise.Name = "buttonGenExercise";
             this.buttonGenExercise.Size = new System.Drawing.Size(75, 23);
             this.buttonGenExercise.TabIndex = 22;
@@ -355,11 +324,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 296);
+            this.ClientSize = new System.Drawing.Size(317, 194);
             this.Controls.Add(this.buttonGenExercise);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.numericUpDownMaxFactor);
             this.Controls.Add(this.numericUpDownFillInBlankPercentage);
             this.Controls.Add(this.label8);
@@ -368,10 +334,11 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "四则运算习题生成器";
+            this.Text = "钱氏口算";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAddPercentage)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -404,9 +371,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDownFillInBlankPercentage;
         private System.Windows.Forms.NumericUpDown numericUpDownMaxFactor;
         private System.Windows.Forms.Button buttonEvenDistribute;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button buttonGenExercise;
     }
 }
