@@ -29,10 +29,21 @@ namespace ElementaryArithmetic
 
         private void fillTextboxEx(string[] exArrary) //, int exVolAdd, int exVolMinus, int exVolMultiply, int exVolDivide)
         {
-            textBoxEx.AppendText("                                钱氏口算");
+            //textBoxEx.AppendText("    钱氏口算            钱氏口算            钱氏口算            钱氏口算");
+            string titleStr = adjustStringByLength("钱氏口算", fixColumnWidth);
+            textBoxEx.AppendText(titleStr + titleStr + titleStr + titleStr);
             textBoxEx.AppendText(Environment.NewLine);
             textBoxEx.AppendText(Environment.NewLine);
-            textBoxEx.AppendText("                          ___月___日   得分：");
+            
+            //textBoxEx.AppendText("   ___月___日          ___月___日          ___月___日          ___月___日");
+            string dateStr = adjustStringByLength("___月___日", fixColumnWidth);
+            textBoxEx.AppendText(dateStr + dateStr + dateStr + dateStr);
+            textBoxEx.AppendText(Environment.NewLine);
+            textBoxEx.AppendText(Environment.NewLine);
+
+            //textBoxEx.AppendText("   得分：              得分：              得分：              得分：");
+            string scoreStr = adjustStringByLength("得分：", fixColumnWidth);
+            textBoxEx.AppendText(scoreStr + scoreStr + scoreStr + scoreStr);
             textBoxEx.AppendText(Environment.NewLine);
             
             for (int i = 0; i < exArrary.Length; i++)
