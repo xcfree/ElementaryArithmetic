@@ -47,17 +47,18 @@
             this.textBoxEx.Multiline = true;
             this.textBoxEx.Name = "textBoxEx";
             this.textBoxEx.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxEx.Size = new System.Drawing.Size(421, 442);
+            this.textBoxEx.Size = new System.Drawing.Size(677, 442);
             this.textBoxEx.TabIndex = 0;
             // 
             // buttonPrint
             // 
-            this.buttonPrint.Location = new System.Drawing.Point(333, 448);
+            this.buttonPrint.Location = new System.Drawing.Point(560, 448);
             this.buttonPrint.Name = "buttonPrint";
             this.buttonPrint.Size = new System.Drawing.Size(75, 23);
             this.buttonPrint.TabIndex = 1;
             this.buttonPrint.Text = "打印";
             this.buttonPrint.UseVisualStyleBackColor = true;
+            this.buttonPrint.Click += new System.EventHandler(this.buttonPrint_Click);
             // 
             // pageSetupDialog1
             // 
@@ -85,7 +86,7 @@
             // 
             // buttonPageSetup
             // 
-            this.buttonPageSetup.Location = new System.Drawing.Point(161, 448);
+            this.buttonPageSetup.Location = new System.Drawing.Point(388, 448);
             this.buttonPageSetup.Name = "buttonPageSetup";
             this.buttonPageSetup.Size = new System.Drawing.Size(75, 23);
             this.buttonPageSetup.TabIndex = 2;
@@ -95,7 +96,7 @@
             // 
             // buttonPrintPreview
             // 
-            this.buttonPrintPreview.Location = new System.Drawing.Point(247, 448);
+            this.buttonPrintPreview.Location = new System.Drawing.Point(474, 448);
             this.buttonPrintPreview.Name = "buttonPrintPreview";
             this.buttonPrintPreview.Size = new System.Drawing.Size(75, 23);
             this.buttonPrintPreview.TabIndex = 3;
@@ -108,7 +109,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(421, 476);
+            this.ClientSize = new System.Drawing.Size(677, 476);
             this.Controls.Add(this.buttonPrintPreview);
             this.Controls.Add(this.buttonPageSetup);
             this.Controls.Add(this.buttonPrint);

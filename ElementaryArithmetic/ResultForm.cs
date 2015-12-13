@@ -11,6 +11,8 @@ namespace ElementaryArithmetic
 {
     public partial class ResultForm : Form
     {
+        const int fixColumnWidth = 20;
+
         public ResultForm(string[] exerciseArray) //, int exVolumeAdd, int exVolumeMinus, int exVolumeMultiply, int exVolumeDivide)
         {
             InitializeComponent();
@@ -18,7 +20,7 @@ namespace ElementaryArithmetic
             this.printDocument1.OriginAtMargins = true;//启用页边距
             this.pageSetupDialog1.EnableMetric = true; //以毫米为单位
             this.pageSetupDialog1.PageSettings.Margins.Top = 0;
-            this.pageSetupDialog1.PageSettings.Margins.Left = 0;
+            this.pageSetupDialog1.PageSettings.Margins.Left = 20;
             this.pageSetupDialog1.PageSettings.Margins.Right = 0;
             this.pageSetupDialog1.PageSettings.Margins.Bottom = 0;
 
@@ -27,17 +29,18 @@ namespace ElementaryArithmetic
 
         private void fillTextboxEx(string[] exArrary) //, int exVolAdd, int exVolMinus, int exVolMultiply, int exVolDivide)
         {
-            textBoxEx.AppendText("    钱氏口算");
+            textBoxEx.AppendText("                                钱氏口算");
             textBoxEx.AppendText(Environment.NewLine);
             textBoxEx.AppendText(Environment.NewLine);
-            textBoxEx.AppendText("___月___日   得分：");
+            textBoxEx.AppendText("                          ___月___日   得分：");
             textBoxEx.AppendText(Environment.NewLine);
             
             for (int i = 0; i < exArrary.Length; i++)
             {
-                //if (i % 4 == 0)
+                if (i % 4 == 0)
                     textBoxEx.AppendText(Environment.NewLine);
-                textBoxEx.AppendText(exArrary[i]); // + "  \t\t");
+                //textBoxEx.AppendText(exArrary[i]); // + "  \t\t");
+                textBoxEx.AppendText(adjustStringByLength(exArrary[i], fixColumnWidth)); 
             }
 
             if (exArrary.Length % 4 != 0)
@@ -50,6 +53,15 @@ namespace ElementaryArithmetic
 
         }
 
+        private string adjustStringByLength(string inputString, int length)
+        {
+            string adjustedString = inputString;
+            while (Encoding.Default.GetByteCount(adjustedString) < length)
+            {
+                adjustedString += " ";
+            }
+            return adjustedString;
+        }
 
         private void buttonPageSetup_Click(object sender, EventArgs e)
         {
@@ -80,6 +92,7 @@ namespace ElementaryArithmetic
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
     }
 }

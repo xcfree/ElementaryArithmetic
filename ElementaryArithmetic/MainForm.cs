@@ -138,6 +138,8 @@ namespace ElementaryArithmetic
                 string tmp = exerciseArray[i];
                 exerciseArray[i] = exerciseArray[r];
                 exerciseArray[r] = tmp;
+
+                Console.WriteLine("length: " + exerciseArray[i].Length);
             }
 
             new ResultForm(exerciseArray).ShowDialog(); //, exVolumeAdd, exVolumeMinus, exVolumeMultiply, exVolumeDivide).ShowDialog();
